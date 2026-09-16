@@ -1,0 +1,13 @@
+{
+  "status": "all exact checks passed",
+  "method": "exhaustive enumeration with integer/Fraction arithmetic",
+  "universe_vertices": 5,
+  "uniform_hyperedge_size": 3,
+  "families_checked": 1024,
+  "partial_coloring_checks": 248832,
+  "good_partial_extension_checks": 111203,
+  "ordered_pair_probability_checks": 251,
+  "included_self_pairs": 31,
+  "each_final_coloring_probability": "1/32",
+  "scope_limit": "finite sanity checks, not a proof for all n and c"
+}

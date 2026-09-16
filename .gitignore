@@ -1,0 +1,19 @@
+/.lake/
+*.olean
+*.ilean
+*.olean.hash
+*.ilean.hash
+*.trace
+__pycache__/
+*.pyc
+.DS_Store
+
+# Regenerated local/CI runs. Curated evidence in verification/ remains tracked.
+/verification/latest/
+/verification/ci/
+
+# Optional machine-local dependency mapping; never part of the release.
+/local-package-overrides.json
+/.submission-work/
+/.submission-state.json
+/submission/output/

@@ -1,0 +1,80 @@
+ℹ [1732/1742] Replayed CoreCompletion
+info: ././././CoreCompletion.lean:51:0: 'Erdos1027Core.compatible_completion' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././CoreCompletion.lean:52:0: 'Erdos1027Core.compatible_completion_exists' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1733/1742] Built Erdos1027Probability
+warning: ././././Erdos1027Probability.lean:38:0: automatically included section variable(s) unused in theorem 'Erdos1027Probability.prodWeight_nonneg':
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [DecidableEq V] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+ℹ [1734/1742] Built Erdos1027Completion
+info: ././././Erdos1027Completion.lean:229:0: 'Erdos1027.completion_count_mul' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Completion.lean:230:0: 'Erdos1027.good_partial_seed_count' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1735/1742] Built Erdos1027Subsets
+warning: ././././Erdos1027Subsets.lean:28:0: automatically included section variable(s) unused in theorem 'Erdos1027Subsets.splits_colorOfSet':
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+⚠ [1736/1742] Built Erdos1027Mixing
+warning: ././././Erdos1027Mixing.lean:178:29: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: ././././Erdos1027Mixing.lean:178:53: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+ℹ [1737/1742] Built Erdos1027Estimates
+info: ././././Erdos1027Estimates.lean:308:0: 'Erdos1027Estimates.pair_overlap_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Estimates.lean:309:0: 'Erdos1027Estimates.total_error_lt_three_quarters' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Estimates.lean:310:0: 'Erdos1027Estimates.good_mass_gt_quarter' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Estimates.lean:311:0: 'Erdos1027Estimates.cross_factor_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Estimates.lean:312:0: 'Erdos1027Estimates.parameters_exist' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1738/1742] Built Erdos1027Events
+warning: ././././Erdos1027Events.lean:51:60: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+note: this linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+info: ././././Erdos1027Events.lean:228:0: 'Erdos1027Events.mass_badEmpty_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Events.lean:229:0: 'Erdos1027Events.expectation_requirements' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Events.lean:230:0: 'Erdos1027Events.mass_badCross_le' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Events.lean:231:0: 'Erdos1027Events.mass_avoid_three' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [1739/1742] Built Erdos1027Main
+warning: ././././Erdos1027Main.lean:22:0: automatically included section variable(s) unused in theorem 'Erdos1027Main.gray_of_no_monochromatic':
+  [Fintype V]
+  [DecidableEq V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] [DecidableEq V] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+warning: ././././Erdos1027Main.lean:44:0: automatically included section variable(s) unused in theorem 'Erdos1027Main.disjoint_of_no_cross':
+  [Fintype V]
+consider restructuring your `variable` declarations so that the variables are not in scope or explicitly omit them:
+  omit [Fintype V] in theorem ...
+note: this linter can be disabled with `set_option linter.unusedSectionVars false`
+info: ././././Erdos1027Main.lean:145:0: 'Erdos1027Main.erdos_1027' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Main.lean:146:0: 'Erdos1027Main.erdos_1027_subsets' depends on axioms: [propext, Classical.choice, Quot.sound]
+✔ [1740/1742] Built Erdos1027
+ℹ [1741/1742] Built Erdos1027Audit
+info: ././././Erdos1027Audit.lean:6:0: Erdos1027Main.erdos_1027.{u_1} : ∀ (c : Real),
+  LT.lt.{0} 0 c →
+    ∃ δ,
+      And (LT.lt.{0} 0 δ)
+        (∃ N,
+          ∀ (V : Type u_1) [inst : Fintype.{u_1} V] [inst_1 : DecidableEq.{u_1 + 1} V] (n : Nat),
+            LE.le.{0} N n →
+              ∀ (F : Finset.{u_1} (Finset.{u_1} V)),
+                (∀ (A : Finset.{u_1} V), Membership.mem.{u_1, u_1} F A → Eq.{1} (Finset.card.{u_1} A) n) →
+                  LE.le.{0} (↑(Finset.card.{u_1} F)) (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} 2 n)) →
+                    LE.le.{0} (HMul.hMul.{0, 0, 0} δ (HPow.hPow.{0, 0, 0} 2 (Fintype.card.{u_1} V)))
+                      ↑(Nat.card.{u_1} (Subtype.{u_1 + 1} fun g => Erdos1027.Proper.{u_1} F g)))
+info: ././././Erdos1027Audit.lean:9:0: Erdos1027Main.erdos_1027_subsets.{u_1} : ∀ (c : Real),
+  LT.lt.{0} 0 c →
+    ∃ δ,
+      And (LT.lt.{0} 0 δ)
+        (∃ N,
+          ∀ (V : Type u_1) [inst : Fintype.{u_1} V] [inst_1 : DecidableEq.{u_1 + 1} V] (n : Nat),
+            LE.le.{0} N n →
+              ∀ (F : Finset.{u_1} (Finset.{u_1} V)),
+                (∀ (A : Finset.{u_1} V), Membership.mem.{u_1, u_1} F A → Eq.{1} (Finset.card.{u_1} A) n) →
+                  LE.le.{0} (↑(Finset.card.{u_1} F)) (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} 2 n)) →
+                    LE.le.{0} (HMul.hMul.{0, 0, 0} δ (HPow.hPow.{0, 0, 0} 2 (Fintype.card.{u_1} V)))
+                      ↑(Nat.card.{u_1} (Subtype.{u_1 + 1} fun B => Erdos1027Subsets.Splits.{u_1} F B)))
+info: ././././Erdos1027Audit.lean:11:0: 'Erdos1027Main.count_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Audit.lean:12:0: 'Erdos1027Main.erdos_1027' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Erdos1027Audit.lean:13:0: 'Erdos1027Main.erdos_1027_subsets' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.

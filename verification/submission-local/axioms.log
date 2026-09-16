@@ -1,0 +1,27 @@
+Erdos1027Main.erdos_1027.{u_1} : ∀ (c : Real),
+  LT.lt.{0} 0 c →
+    ∃ δ,
+      And (LT.lt.{0} 0 δ)
+        (∃ N,
+          ∀ (V : Type u_1) [inst : Fintype.{u_1} V] [inst_1 : DecidableEq.{u_1 + 1} V] (n : Nat),
+            LE.le.{0} N n →
+              ∀ (F : Finset.{u_1} (Finset.{u_1} V)),
+                (∀ (A : Finset.{u_1} V), Membership.mem.{u_1, u_1} F A → Eq.{1} (Finset.card.{u_1} A) n) →
+                  LE.le.{0} (↑(Finset.card.{u_1} F)) (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} 2 n)) →
+                    LE.le.{0} (HMul.hMul.{0, 0, 0} δ (HPow.hPow.{0, 0, 0} 2 (Fintype.card.{u_1} V)))
+                      ↑(Nat.card.{u_1} (Subtype.{u_1 + 1} fun g => Erdos1027.Proper.{u_1} F g)))
+Erdos1027Main.erdos_1027_subsets.{u_1} : ∀ (c : Real),
+  LT.lt.{0} 0 c →
+    ∃ δ,
+      And (LT.lt.{0} 0 δ)
+        (∃ N,
+          ∀ (V : Type u_1) [inst : Fintype.{u_1} V] [inst_1 : DecidableEq.{u_1 + 1} V] (n : Nat),
+            LE.le.{0} N n →
+              ∀ (F : Finset.{u_1} (Finset.{u_1} V)),
+                (∀ (A : Finset.{u_1} V), Membership.mem.{u_1, u_1} F A → Eq.{1} (Finset.card.{u_1} A) n) →
+                  LE.le.{0} (↑(Finset.card.{u_1} F)) (HMul.hMul.{0, 0, 0} c (HPow.hPow.{0, 0, 0} 2 n)) →
+                    LE.le.{0} (HMul.hMul.{0, 0, 0} δ (HPow.hPow.{0, 0, 0} 2 (Fintype.card.{u_1} V)))
+                      ↑(Nat.card.{u_1} (Subtype.{u_1 + 1} fun B => Erdos1027Subsets.Splits.{u_1} F B)))
+'Erdos1027Main.count_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1027Main.erdos_1027' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Erdos1027Main.erdos_1027_subsets' depends on axioms: [propext, Classical.choice, Quot.sound]

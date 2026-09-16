@@ -1,0 +1,18 @@
+{
+  "CoreCompletion.lean": "ca179847e03f6809103cbfedcd4120fa32da5b8fad66544301a8070759bf53dd",
+  "Erdos1027.lean": "395388f20551d4bd723a8f3fd9c8681e513c0297ce46d8c4a8135f950e0ecf43",
+  "Erdos1027Audit.lean": "7c7d14fc1291c01a386e96ed9eaadfa14a17b5966fc51c29eade983f6e09ef8a",
+  "Erdos1027Completion.lean": "40e8910f4844d289f35b3d3cb2693dd078e54c83ab3cb24c31cd80cfad67aea0",
+  "Erdos1027Estimates.lean": "af1a96e2afc43fa4aac1dd9a7f482d32e79d3213fe77763012e9a4dc49580922",
+  "Erdos1027Events.lean": "b74ad8453a0bfc384064e0fa2b3f87f34a795272dcaf42626133513247fbe3f3",
+  "Erdos1027Main.lean": "e90edfbc38bc9a1ea0867cddbb12d11229b904b8c4ea6642624bae4e6654edc2",
+  "Erdos1027Mixing.lean": "ffaf45e81c4ca00f3a6f6c05a5c3fce83762f2aa9cc9408716c6a8f6e3e46e3d",
+  "Erdos1027Probability.lean": "99f4be24db2b1c06855503450ab769fec30122217e501a316c0ec8e11b3eefe8",
+  "Erdos1027Subsets.lean": "41dc0b4bc7689fbc32c53b4bb48e932acaf768764237f74c7ee7bf07cd15d797",
+  "lean-toolchain": "55e97be96000b5e9e290c9e74482e5e317861499a5540353ce845471bded8cea",
+  "lakefile.toml": "92f79c4ee9c72591c9889c7de26fced35c59cc3399e3ab81c052689c11827a9c",
+  "lake-manifest.json": "6be418f1c3014f5f7c2b7a47dcc6b229ace0c8006cd7152f0d296cff741d86c8",
+  "scripts/verify.sh": "4a162638792a3f383b70e883bcb555d36cfa726c844023d9e39d610540cb1c05",
+  ".github/workflows/lean.yml": "6090d3e6b1810d7912dab8cf52eec7db5d0957de297622f4d5a7f61fdc2b72d1",
+  ".gitignore": "2fa85c2dd81a643956f2ce4ddbef1f5591f85878d364e39b43fb2a131884fcd0"
+}

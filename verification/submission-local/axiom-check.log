@@ -1,0 +1,4 @@
+Erdos1027Main.count_lower_bound: Classical.choice, Quot.sound, propext
+Erdos1027Main.erdos_1027: Classical.choice, Quot.sound, propext
+Erdos1027Main.erdos_1027_subsets: Classical.choice, Quot.sound, propext
+All three final theorem axiom reports passed; source hashes are unchanged.

@@ -1,0 +1,71 @@
+### Related problem or entry
+
+JSP-000854, corresponding to [Erdős problem 1027](https://www.erdosproblems.com/1027).
+
+I submit a complete Lean formalization for review. Please assess the statement
+correspondence and verification evidence, record the formalization contribution
+if appropriate, and reassess the catalog's Lean-proof and eligibility fields.
+The catalog currently credits Koishi Chan with the mathematical solution and
+records no Lean proof. This submission does not claim a new solution of an
+open problem, first-formalization priority, an exclusive reservation, or an award.
+
+### Recipient placeholder or confirmed public ID
+
+`RECIPIENT-JSP-000854-A`. Recipient confirmation is pending.
+
+### Contributions and evidence
+
+The contribution is a complete formalization developed with OpenAI Codex
+assistance under the submitter's direction. It includes finite product weights,
+three bad-event estimates, compatible completion counts, uniform final-colouring
+counts, real-parameter bounds, and an exact colouring/subset bijection.
+
+- Pinned proof repository: {{PROOF_REPO}}/tree/{{PROOF_COMMIT}}
+- Main source: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/Erdos1027Main.lean
+- Final subset theorem: `Erdos1027Main.erdos_1027_subsets`.
+- Equivalent colouring theorem: `Erdos1027Main.erdos_1027`.
+- Statement correspondence: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/STATEMENT.md
+- English mathematical proof: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/PROOF.md
+- Attribution and AI assistance: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/ATTRIBUTION.md
+- Verification scope: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/LEAN-STATUS.md
+- Recorded axiom audit: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/verification/axioms.log
+- Recorded Lake build: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/verification/lake-build.log
+- Reproduction script: {{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/scripts/verify.sh
+
+For every real `c > 0`, the theorem provides `delta > 0` and a natural `N`
+before quantifying over arbitrary finite vertex types, `n >= N`, and families
+of at most `c * 2^n` sets of size `n`. It proves that at least
+`delta * 2^(card V)` subsets meet every edge without containing it in full.
+There are no additional degree or intersection hypotheses.
+
+The checked environment is Lean 4.19.0 and Mathlib v4.19.0, pinned to
+`c44e0c8ee63ca166450922a373c7409c5d26b00b`. The complete local Lake build
+passed. Both final theorems and the quantitative counting bound report only
+`propext`, `Classical.choice`, and `Quot.sound`, without `sorryAx` or a
+project-defined solution axiom.
+
+The recorded reproduction reused pinned dependency caches and is a development
+check. A GitHub Actions workflow is included; its inclusion is not a claim that
+a hosted run has already passed. No independent human review, independent
+checker audit, curator statement signature, or organizer decision is claimed.
+The exact ceiling choices in the exposition are not separate Lean corollaries;
+the full original qualitative theorem is formally proved.
+
+### Confirmation status
+
+Pending. Please retain the placeholder until the organizers' confirmation
+requirements are met. No unconfirmed legal identity, private contact details,
+identity documents, or payment information are supplied.
+
+### Attribution questions and conflicts
+
+This is a self-submission: the submitter directed and coordinated the
+Codex-assisted development and has an interest in its assessment. Mathematical
+solution credit, formalization credit, and independent review should be
+considered separately. The existing Koishi Chan credit is retained. Authorship
+and verification details are disclosed in the linked attribution statement.
+
+Please advise on the appropriate candidate review process and any additional
+independent checks required. The requested action is evidence review and
+eligibility reassessment, not payment authorization or recognition of an
+exclusive claim.

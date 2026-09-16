@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-16",
+  "lean_verifier": {
+    "exit_code": 0,
+    "dependency_mode": "local_path_overrides",
+    "log_directory": "submission-local"
+  },
+  "awards_revision": "f4e7173d89dfe91022a185427d63452c8ffbf6ae",
+  "candidate_validation": {
+    "fixture_only": true,
+    "commands_passed": [
+      "validate",
+      "links",
+      "build",
+      "check"
+    ],
+    "upstream_tests_passed": 22,
+    "fixture_published": false
+  },
+  "publisher_offline_regression_tests_passed": 8,
+  "github_authenticated_publication_test": false,
+  "github_publication_performed": false,
+  "hosted_github_ci_run": false,
+  "independent_human_review": false
+}

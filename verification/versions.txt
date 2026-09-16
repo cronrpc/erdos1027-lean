@@ -1,0 +1,6 @@
+Verification date: 2026-09-16
+Lean: 4.19.0
+Lean commit: 6caaee842e94
+Mathlib tag: v4.19.0
+Mathlib commit: c44e0c8ee63ca166450922a373c7409c5d26b00b
+Transitive dependency pins: ../lake-manifest.json

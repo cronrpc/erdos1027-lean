@@ -1,0 +1,22 @@
+Propose an **under-verification candidate** for JSP-000854 / Erdős problem 1027.
+
+Candidate ID: `{{ENTRY_ID}}`.
+
+The submitted contribution is an AI-assisted Lean 4 formalization of the complete qualitative theorem: for every positive real c there is a positive proportion and a threshold, both depending only on c, that work for every sufficiently large uniform hypergraph with at most c · 2ⁿ edges. Koishi Chan's existing mathematical solution remains credited. This PR does not claim a new resolution, established priority, an announced award, or entitlement to payment.
+
+The immutable proof source is [{{PROOF_COMMIT}}]({{PROOF_REPO}}/tree/{{PROOF_COMMIT}}). The top-level results are `Erdos1027Main.erdos_1027` and `Erdos1027Main.erdos_1027_subsets` in [Erdos1027Main.lean]({{PROOF_REPO}}/blob/{{PROOF_COMMIT}}/Erdos1027Main.lean). Build and axiom-audit instructions and local evidence are included in that pinned repository; they are submitter-provided evidence and require independent reproduction.
+
+Related issue: {{ISSUE_URL}}
+
+The record deliberately leaves `decision`, `verification.formal`, and `verification/record.yaml` null. The full quantified proposition and the definitions of `Proper` and `Splits` are supplied in `verification/proposed-statement.md`, explicitly as an unsigned proposal. The current statement schema requires at least two signatories with public curator profiles and published definition reviews; no such signatures or independent reviews are asserted here. A maintainer-approved `statement.yaml` must be issued before activating the structured formal-evidence reference. No curator or verifier profile has been created.
+
+The candidate status is `under-verification`. The `verified-pending` pool name is an upstream location convention and does not mean that verification has passed. The recipient remains a `RECIPIENT-*` placeholder without an asserted identity, affiliation, or confirmation.
+
+Review requested:
+
+- Compare all quantifiers and definitions against the original problem and the pinned source.
+- Reproduce the Lean build, inspect the dependency pins, and audit the actual top-level axioms.
+- Arrange the statement signatures and independent verification required by the repository.
+- Review attribution, unresolved priority questions, professional conflicts, and eligibility separately.
+
+Repository validation and local-link checks address record consistency; they neither execute Lean proofs nor certify mathematical truth. External URL availability must also be checked separately. Include regenerated `data/candidates.json` after running the commands in `docs/records.md`.

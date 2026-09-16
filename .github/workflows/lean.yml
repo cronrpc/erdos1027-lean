@@ -1,0 +1,50 @@
+name: Lean verification
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: lean-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      LEAN_NUM_THREADS: "2"
+      VERIFY_LOG_DIR: verification/ci
+    steps:
+      - name: Check out the proof source
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      # The official action installs Elan and uses the checked-in lean-toolchain.
+      # Build and cache commands are run explicitly by the shared verifier below.
+      - name: Set up Lean 4.19.0
+        uses: leanprover/lean-action@50fcf42d2e460296f1a34b402e990d1b24f8b596 # v1
+        with:
+          auto-config: "false"
+          build: "false"
+          test: "false"
+          lint: "false"
+          use-mathlib-cache: "false"
+          use-github-cache: "false"
+
+      - name: Fetch pinned dependencies, build, and audit final axioms
+        run: bash scripts/verify.sh
+
+      - name: Upload actual verification logs
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
+        with:
+          name: lean-verification-${{ github.run_id }}-${{ github.run_attempt }}
+          path: verification/ci/
+          if-no-files-found: warn
+          retention-days: 30

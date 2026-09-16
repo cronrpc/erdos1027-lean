@@ -1,0 +1,9 @@
+{
+  "started_at_utc": "2026-09-16T15:53:44.284678+00:00",
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "mathlib_revision": "c44e0c8ee63ca166450922a373c7409c5d26b00b",
+  "dependency_mode": "local_path_overrides",
+  "github_actions": false,
+  "github_sha": null,
+  "lean_num_threads": "2"
+}

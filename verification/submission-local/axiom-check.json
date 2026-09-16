@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "theorems": {
+    "Erdos1027Main.count_lower_bound": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1027Main.erdos_1027": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "Erdos1027Main.erdos_1027_subsets": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ]
+  }
+}
