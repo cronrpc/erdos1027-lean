@@ -25,15 +25,17 @@ and outside the subset. No degree or intersection hypothesis is added.
 The witnesses `delta` and `N` are chosen before `V`, `n`, and `F`.
 Taking `V` to be the union of the family gives the original formulation.
 
-## Submission preparation
+## Submission and attribution
 
-See [START_HERE.md](START_HERE.md) for the prepared English submission and
-optional GitHub CLI publication script. Publication has not been performed
-from this workspace. The script requires your locally authenticated account.
-
+Formalization contributor: cronrpc. See the
+[contribution record](ATTRIBUTION.md) for the project role and prior mathematics.
 The English proof is [PROOF.md](PROOF.md), with a clause-by-clause
-[statement correspondence](STATEMENT.md) and a transparent
-[attribution and AI-assistance record](ATTRIBUTION.md).
+[statement correspondence](STATEMENT.md).
+
+The existing [award claim](https://github.com/TheJustinSunPrize/awards/issues/141)
+and [catalog correction PR](https://github.com/TheJustinSunPrize/awards/pull/142)
+are updated in place. See [START_HERE.md](START_HERE.md) for the current submission
+format. Proof source and build artifacts remain in this independent repository.
 
 ## Reproduce
 
@@ -65,7 +67,7 @@ runs the same verifier and stores its actual logs.
 | `PROOF.md` | English mathematical proof and explicit paper constants |
 | `PROOF.zh.md` | Optional Chinese translation |
 | `STATEMENT.md` | Clause-by-clause statement correspondence |
-| `ATTRIBUTION.md` | Prior work, roles, and AI assistance |
+| `ATTRIBUTION.md` | Mathematical sources and formalization contributor roles |
 | `LEAN-STATUS.md` | Verification scope and actual audit results |
 | `verification/` | Recorded verification output |
 | `CoreCompletion.lean` | Earlier standalone representative lemma; not needed by Main |
